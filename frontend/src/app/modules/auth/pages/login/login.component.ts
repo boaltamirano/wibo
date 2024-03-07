@@ -7,8 +7,7 @@ import { HeaderComponent } from '../../components/header/header.component';
   selector: 'app-login',
   standalone: true,
   imports: [LoginFormComponent, BackgroundComponent, HeaderComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  templateUrl: './login.component.html'
 })
 export class LoginComponent {
 
