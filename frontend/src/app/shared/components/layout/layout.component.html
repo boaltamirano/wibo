@@ -2,12 +2,12 @@
     <app-header />
     <app-side-bar />
     <div class="p-4 sm:ml-64 ">
-        <div class="p-2 rounded-lg dark:border-gray-700 mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            <div class="col-span-2">
-
+        <div class="p-2 rounded-lg dark:border-gray-700 mt-5 grid grid-cols-3 gap-4  bg-cyan-400">
+            <div class="col-span-2 ">
                 <router-outlet />
             </div>
-            <div class="col-span-1 h-full px-4">
+
+            <div >
                 <div class="p-2 border-b-2 border-gray-400 border-dotted">
                     <div class="flex justify-between">
                         <p class="text-2xl font-medium text-gray-900 dark:text-black mb-2">ORDER #</p>
@@ -32,7 +32,7 @@
                                     stroke-width="2"
                                     d="M9.1 4H5c-.5 0-.9.4-.9.9V9c0 .5.4.9.9.9h4c.5 0 .9-.4.9-.9V5c0-.5-.4-.9-.9-.9Zm10 0H15c-.5 0-.9.4-.9.9V9c0 .5.4.9.9.9h4c.5 0 .9-.4.9-.9V5c0-.5-.4-.9-.9-.9Zm-10 10H5c-.5 0-.9.4-.9.9V19c0 .5.4.9.9.9h4c.5 0 .9-.4.9-.9v-4c0-.5-.4-.9-.9-.9Zm10 0H15c-.5 0-.9.4-.9.9V19c0 .5.4.9.9.9h4c.5 0 .9-.4.9-.9v-4c0-.5-.4-.9-.9-.9Z" />
                             </svg>
-                            <p class="font-semibold ml-2">MESA: <span class="text-orange-800">1</span></p>
+                            <p class="font-semibold ml-2">MESA: <span class="text-orange-800">{{ table() }}</span></p>
                         </div>
                     </div>
                 </div>

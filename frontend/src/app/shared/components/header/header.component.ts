@@ -1,10 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 import { CartService } from '../../../services/cart.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {

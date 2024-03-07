@@ -39,7 +39,7 @@ export class LoginFormComponent {
       const response = await this.usersService.login(this.form.getRawValue())
       if (response?.body?.token) {
         this.tokenService.saveToken(response?.body?.token)
-        this.router.navigate(['/home'])
+        this.router.navigate(['/app/tables'])
       }
       console.log(response)
     } else {
