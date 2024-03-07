@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEye, faEyeSlash, faSignIn } from '@fortawesome/free-solid-svg-icons';
 import { UsersService } from '../../../../services/users.service';
+import { TokenService } from '../../../../services/token.service';
 
 @Component({
   selector: 'app-login-form',
@@ -15,6 +16,7 @@ import { UsersService } from '../../../../services/users.service';
 export class LoginFormComponent {
 
   usersService = inject(UsersService);
+  tokenService = inject(TokenService);
 
   form = this.formBuilder.nonNullable.group({
     email: ['', [Validators.email, Validators.required]],
@@ -34,11 +36,13 @@ export class LoginFormComponent {
   async doLogin() {
     if (this.form.valid) {
       this.status = 'loading';
-      const { email, password } = this.form.getRawValue();
-      console.log("email: ", this.form.getRawValue())
       const response = await this.usersService.login(this.form.getRawValue())
+      if (response?.body[0]?.token) {
+        console.log(response?.body[0]?.token)
+        this.tokenService.saveToken(response?.body[0]?.token)
+        this.router.navigate(['/home'])
+      }
       console.log(response)
-      // TODO
     } else {
       this.form.markAllAsTouched();
     }

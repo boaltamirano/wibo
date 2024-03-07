@@ -1,9 +1,28 @@
-import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Injectable, inject } from '@angular/core';
+import { firstValueFrom } from 'rxjs';
+import { Auth } from './auth.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TokenService {
 
-  constructor() { }
+  constructor() {
+
+  }
+
+  saveToken(token: string) {
+    localStorage.setItem('token', token)
+  }
+
+  getToken() {
+    const token = localStorage.getItem('token')
+    return token;
+  }
+
+  removeToken() {
+    localStorage.removeItem("token")
+  }
+
 }
