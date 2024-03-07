@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+    api-wibo:
+        build: .
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/app
+        networks:
+            - net-wibo
+        depends_on:
+            - mongo-db
+
+    mongo-db:
+        image: mongo:latest
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: rootpassword
+        ports:
+            - 27017:27017
+        volumes:
+            - wibo-data:/data/db
+        networks:
+            - net-wibo
+
+networks:
+    net-wibo:
+        name: net-wibo
+
+volumes:
+  wibo-data:
+    name: wibo-data

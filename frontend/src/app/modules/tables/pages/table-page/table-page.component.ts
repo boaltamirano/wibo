@@ -24,7 +24,6 @@ export class TablePageComponent {
     // this.cartService.addToCart(product)
     this.router.navigate(['/app/menus'])
     this.tableService.updateOrder(table)
-    console.log(table)
   }
 
 }

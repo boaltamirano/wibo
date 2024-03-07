@@ -15,4 +15,8 @@ export class OrdersService {
     this.tableSelected.update(last => table)
   }
 
+  saveOrder(order: Order) {
+
+  }
+
 }

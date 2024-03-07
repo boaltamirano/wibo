@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "65e923fddfc7a427e920ea89"
+  },
+  "name": "Omar",
+  "lastname": "Altamirano",
+  "age": 20,
+  "email": "user@test.com",
+  "password": "$2b$12$eTEfpVEBJowih4B1UteJhOzHKNzDNBmNsUnxVBetkUCS0myAeoUE.",
+  "created_at": 1709777917,
+  "updated_at": 0
+}]

@@ -1,0 +1,13 @@
+<div class="p-2 flex bg-gray-300 justify-between px-5 rounded-2xl mt-4">
+    <div class="flex">
+        <img class="w-14 h-14 rounded-md mr-5" [src]="menu.image" alt="sdasdas">
+        <div>
+            <p>{{ menu.name }}</p>
+            <p class="text-xl text-gray-900 dark:text-black">$ {{ menu.total }}</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <p>CANTIDAD</p>
+        <p class="text-xl text-gray-900 dark:text-black">{{ menu.amount }}</p>
+    </div>
+</div>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLinkActive, RouterLinkWithHref } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -10,4 +10,10 @@ import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
 })
 export class SideBarComponent {
 
+  router = inject(Router)
+
+  onClickLogout() {
+    localStorage.clear()
+    this.router.navigate(['login'])
+  }
 }

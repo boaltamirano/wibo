@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "65e967e4aacb9949d82c8e51"
+  },
+  "name": "Hamburguesa Simple",
+  "price": 18.9,
+  "description": "Hamburguesa simple con Salsa BBQ ",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly93d3cucmVjZXRhc25lc3RsZS5jb20uZWMvc2l0ZXMvZGVmYXVsdC9maWxlcy9zcmhfcmVjaXBlcy80ZTQyOTM4NTdjMDNkODE5ZTRhZTUxZGUxZTg2ZDY2YS5qcGc=",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709795300,
+  "updated_at": 0
+},
+{
+  "_id": {
+    "$oid": "65e9684baacb9949d82c8e52"
+  },
+  "name": "Hamburguesa suprema",
+  "price": 10.3,
+  "description": "Hamburguesa suprema de queso y tocino Fritz",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly9wcm9uYWNhdHFtYS5jb20vaW1hZ2VzL2NvbV95b29yZWNpcGUvYmFubmVyX3N1cGVyaW9yLzE4MDk2XzEuanBn",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709795403,
+  "updated_at": 0
+},
+{
+  "_id": {
+    "$oid": "65e96892aacb9949d82c8e53"
+  },
+  "name": "Pizza de Pepperoni",
+  "price": 8,
+  "description": "Pepperoni italiano, queso mozarella y salsa de tomate.",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly9yb3ZpYW5kYXBsdXMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIyLzA0L1BpenphLVBlcHBlcm9uaS5qcGc=",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709795474,
+  "updated_at": 0
+},
+{
+  "_id": {
+    "$oid": "65e968e2aacb9949d82c8e54"
+  },
+  "name": "Pizza romana",
+  "price": 18,
+  "description": "La pizza romana es típica de la ciudad de Roma como su propio nombre indica.",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly9pbWFnLmJvbnZpdmV1ci5jb20vcHJlc2VudGFjaW9uLWZpbmFsLWRlLWxhLXBpenphLXJvbWFuYS5qcGc=",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709795554,
+  "updated_at": 0
+},
+{
+  "_id": {
+    "$oid": "65e96a6aaacb9949d82c8e55"
+  },
+  "name": "Lasaña de carne",
+  "price": 16,
+  "description": "Ideal para cualquier almuerzo o cena. Puedes acompañar con pan de ajo.",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly9jb250ZW50LWNvY2luYS5sZWN0dXJhcy5jb20vbWVkaW8vMjAyMy8wNy8yOS9sYXNhbmEtZGUtY2FybmUtYS1sYS1zYXJ0ZW5fMDAwMDAwMDBfMjMxMDEwMTcxNDU0XzEyMDB4MTIwMC5qcGc=",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709795946,
+  "updated_at": 0
+},
+{
+  "_id": {
+    "$oid": "65e96adcaacb9949d82c8e56"
+  },
+  "name": "Alitas de pollo a la americana",
+  "price": 6,
+  "description": "Alitas de pollo fritas crujientes con un rebozado con especias, que están para chuparse los dedos",
+  "image": {
+    "$binary": {
+      "base64": "aHR0cHM6Ly9pbWFnZXMuaG9sYS5jb20vaW1hZ2VuZXMvY29jaW5hL3JlY2V0YXMvMjAyMDAyMDUxNTk4MTQvYWxpdGFzLWRlLXBvbGxvLWEtbGEtYW1lcmljYW5hLWJ1ZmZhbG8td2luZ3MvMC03NzgtNjcxL2FpdGFzLWRlLXBvbGxvLWEtbGEtYW1lcmljYW5hLW8tYnVmZmFsby13aW5ncy10LmpwZz90eD13XzY4MA==",
+      "subType": "00"
+    }
+  },
+  "rating": 4,
+  "created_at": 1709796060,
+  "updated_at": 0
+}]

@@ -9,6 +9,7 @@ export class UsersService {
   
   private httpClient = inject(HttpClient);
   private baseUrl: string;
+  user: any;
 
   constructor() {
     this.baseUrl = 'http://localhost:8000/auth'
@@ -18,5 +19,9 @@ export class UsersService {
     return firstValueFrom(
       this.httpClient.post<any>(`${this.baseUrl}`, formValue)
     )
+  }
+
+  chargeUser(user: any) {
+    this.user = user;
   }
 }

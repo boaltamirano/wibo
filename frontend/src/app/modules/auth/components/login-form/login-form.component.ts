@@ -40,8 +40,9 @@ export class LoginFormComponent {
       if (response?.body?.token) {
         this.tokenService.saveToken(response?.body?.token)
         this.router.navigate(['/app/tables'])
+        localStorage.setItem('user', JSON.stringify(response?.body?.user))
+        this.usersService.chargeUser(response?.body?.user)
       }
-      console.log(response)
     } else {
       this.form.markAllAsTouched();
     }
