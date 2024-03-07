@@ -37,9 +37,8 @@ export class LoginFormComponent {
     if (this.form.valid) {
       this.status = 'loading';
       const response = await this.usersService.login(this.form.getRawValue())
-      if (response?.body[0]?.token) {
-        console.log(response?.body[0]?.token)
-        this.tokenService.saveToken(response?.body[0]?.token)
+      if (response?.body?.token) {
+        this.tokenService.saveToken(response?.body?.token)
         this.router.navigate(['/home'])
       }
       console.log(response)
